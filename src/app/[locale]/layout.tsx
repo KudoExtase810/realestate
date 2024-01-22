@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import { Locale, locales } from "@/i18n";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,8 @@ export default function RootLayout({
     children: React.ReactNode;
     params: { locale: Locale };
 }>) {
+    // https://next-intl-docs.vercel.app/docs/getting-started/app-router#add-unstable_setrequestlocale-to-all-layouts-and-pages
+    unstable_setRequestLocale(locale);
     return (
         <html lang={locale}>
             <body className={inter.className}>{children}</body>
