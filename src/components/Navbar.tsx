@@ -1,6 +1,9 @@
 "use client";
-import { Link, usePathname } from "@/lib/navigation";
+
+import { locales, type Locale } from "@/i18n";
+import { Link, usePathname, useRouter } from "@/lib/navigation";
 import clsx from "clsx";
+import { useLocale } from "next-intl";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -30,12 +33,11 @@ const Navbar = () => {
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
                     {links.map((link) => (
-                        <li>
+                        <li key={link.label}>
                             <Link
                                 className={clsx(
                                     pathname !== link.href && "text-primary"
                                 )}
-                                key={link.label}
                                 href={link.href}
                             >
                                 {link.label}
@@ -43,9 +45,51 @@ const Navbar = () => {
                         </li>
                     ))}
                 </ul>
+                <LocaleSwitcher />
             </div>
         </header>
     );
 };
 
 export default Navbar;
+
+const LocaleSwitcher = () => {
+    const router = useRouter();
+    const pathname = usePathname();
+
+    const currentLocale = useLocale() as Locale;
+    const localeFlags: Record<Locale, string> = {
+        en: "/images/flags/gb.svg",
+        de: "/images/flags/de.svg",
+    };
+    return (
+        <div className="dropdown dropdown-bottom">
+            <div tabIndex={0} role="button" className="m-1">
+                <Image
+                    src={localeFlags[currentLocale]}
+                    alt={currentLocale}
+                    width={64 / 2}
+                    height={42 / 2}
+                    className="rounded-sm"
+                    unoptimized
+                />
+            </div>
+            <ul
+                tabIndex={0}
+                className="dropdown-content rounded-md -right-3 z-[1] menu p-2 shadow bg-base-100 mx-auto"
+            >
+                {locales.map((locale) => (
+                    <li key={locale}>
+                        <button
+                            onClick={() => {
+                                router.replace(pathname, { locale });
+                            }}
+                        >
+                            {locale.toUpperCase()}
+                        </button>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+};
