@@ -1,6 +1,6 @@
+import Hero from "@/components/home/Hero";
 import { Locale } from "@/i18n";
 import { unstable_setRequestLocale } from "next-intl/server";
-import Image from "next/image";
 
 export default function Home({
     params: { locale },
@@ -9,5 +9,9 @@ export default function Home({
 }) {
     // https://next-intl-docs.vercel.app/docs/getting-started/app-router#add-unstable_setrequestlocale-to-all-layouts-and-pages
     unstable_setRequestLocale(locale);
-    return <div>hello</div>;
+    return (
+        <div className="">
+            <Hero />
+        </div>
+    );
 }
