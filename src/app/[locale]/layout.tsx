@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import { Locale, locales } from "@/i18n";
 import { unstable_setRequestLocale } from "next-intl/server";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
             <body className={poppins.className}>
                 <Navbar />
                 <main>{children}</main>
+                <Footer />
             </body>
         </html>
     );

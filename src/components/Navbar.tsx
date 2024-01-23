@@ -31,7 +31,7 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="flex-none">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 ">
                     {links.map((link) => (
                         <li key={link.label}>
                             <Link
@@ -59,7 +59,7 @@ const LocaleSwitcher = () => {
 
     const currentLocale = useLocale() as Locale;
     const localeFlags: Record<Locale, string> = {
-        en: "/images/flags/gb.svg",
+        en: "/images/flags/uk.svg",
         de: "/images/flags/de.svg",
     };
     return (
@@ -68,15 +68,15 @@ const LocaleSwitcher = () => {
                 <Image
                     src={localeFlags[currentLocale]}
                     alt={currentLocale}
-                    width={64 / 2}
-                    height={42 / 2}
+                    width={64 / 2.5}
+                    height={42 / 2.5}
                     className="rounded-sm"
                     unoptimized
                 />
             </div>
             <ul
                 tabIndex={0}
-                className="dropdown-content rounded-md -right-3 z-[1] menu p-2 shadow bg-base-100 mx-auto"
+                className="dropdown-content rounded-md -right-3 z-[1] menu p-2 shadow bg-base-200 mx-auto"
             >
                 {locales.map((locale) => (
                     <li key={locale}>

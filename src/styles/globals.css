@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.section-padding {
+    @apply py-4 lg:py-12;
+}
