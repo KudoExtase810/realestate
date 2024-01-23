@@ -1,7 +1,9 @@
 import { Link } from "@/lib/navigation";
+import { useTranslations } from "next-intl";
 import { FaChevronRight } from "react-icons/fa";
 
 const Hero = () => {
+    const t = useTranslations("Home");
     return (
         <section
             className="hero min-h-screen"
@@ -13,18 +15,16 @@ const Hero = () => {
             <div className="hero-content text-center">
                 <div className="container text-center mx-auto lg:max-w-5xl">
                     <h1 className="mb-5 text-7xl font-semibold max-sm:font-bold leading-tight max-lg:text-6xl max-sm:text-3xl">
-                        Find and explore your dream property at affordable
-                        prices
+                        {t("heading")}
                     </h1>
                     <p className="mb-5 sm:text-lg mx-auto lg:max-w-lg text-secondary-content">
-                        Ready to live apparments in a premium location with
-                        complete facilities and affordable prices.
+                        {t("description")}
                     </p>
                     <Link
                         href="#"
                         className="btn btn-primary flex gap-1.5 items-center group max-w-sm mx-auto"
                     >
-                        <span>Get started</span>
+                        <span>{t("button")}</span>
                         <FaChevronRight className="transition-transform duration-300 group-hover:translate-x-3" />
                     </Link>
                 </div>

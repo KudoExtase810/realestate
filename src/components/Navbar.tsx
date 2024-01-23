@@ -3,16 +3,19 @@
 import { locales, type Locale } from "@/i18n";
 import { Link, usePathname, useRouter } from "@/lib/navigation";
 import clsx from "clsx";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 
 const Navbar = () => {
+    const t = useTranslations("Navbar");
+
     const links = [
-        { label: "Home", href: "/" },
-        { label: "About Us", href: "/about" },
+        { label: t("home"), href: "/" },
+        { label: t("about-us"), href: "/about" },
     ];
     const pathname = usePathname();
     const isHome = pathname === "/";
+
     return (
         <header
             className={clsx(

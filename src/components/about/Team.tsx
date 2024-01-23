@@ -1,31 +1,26 @@
 import Image from "next/image";
-import Details from "./Details";
 
 const Team = () => {
     const staff = [
         {
             name: "Hanma Yujiro",
             role: "CEO",
-            // image: "/images/team/person1.webp",
-            image: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D",
+            image: "/images/team/person1.avif",
         },
         {
             name: "Kevin Peterson",
             role: "Designer",
-            // image: "/images/team/person1.webp",
-            image: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D",
+            image: "/images/team/person1.avif",
         },
         {
             name: "Mohammed Ali",
             role: "HR Manager",
-            // image: "/images/team/person1.webp",
-            image: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D",
+            image: "/images/team/person1.avif",
         },
         {
             name: "Clint Eastwood",
             role: "Developer",
-            // image: "/images/team/person1.webp",
-            image: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D",
+            image: "/images/team/person1.avif",
         },
     ];
     const firstHalf = staff.slice(0, Math.ceil(staff.length / 2));

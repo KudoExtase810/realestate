@@ -1,5 +1,11 @@
 {
-    "Index": {
-        "title": "Hello hitler!"
+    "Navbar": {
+        "home": "Startseite",
+        "about-us": "Über uns"
+    },
+    "Home": {
+        "heading": "Finden und erkunden Sie Ihre Traumimmobilie zu erschwinglichen Preisen",
+        "description": "Bereit zum Einzug - Wohnungen in erstklassiger Lage mit vollständiger Ausstattung und erschwinglichen Preisen.",
+        "button": "Loslegen"
     }
 }

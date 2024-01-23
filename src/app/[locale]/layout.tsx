@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "@/styles/globals.css";
 import { Locale, locales } from "@/i18n";
 import { unstable_setRequestLocale } from "next-intl/server";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -29,12 +30,20 @@ export default function RootLayout({
 }>) {
     // https://next-intl-docs.vercel.app/docs/getting-started/app-router#add-unstable_setrequestlocale-to-all-layouts-and-pages
     unstable_setRequestLocale(locale);
+    const translations = useMessages();
+
     return (
         <html lang={locale}>
             <body className={poppins.className}>
-                <Navbar />
-                <main>{children}</main>
-                <Footer />
+                <NextIntlClientProvider
+                    locale={locale}
+                    messages={translations}
+                    timeZone="Asia/Dubai"
+                >
+                    <Navbar />
+                    <main>{children}</main>
+                    <Footer />
+                </NextIntlClientProvider>
             </body>
         </html>
     );

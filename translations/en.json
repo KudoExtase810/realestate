@@ -1,5 +1,11 @@
 {
-    "Index": {
-        "title": "Hello world!"
+    "Navbar": {
+        "home": "Home",
+        "about-us": "About"
+    },
+    "Home": {
+        "heading": "Find and explore your dream property at affordable prices",
+        "description": "Ready to live apparments in a premium location with complete facilities and affordable prices.",
+        "button": "Get started"
     }
 }
