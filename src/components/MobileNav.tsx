@@ -1,7 +1,7 @@
 "use client";
 
 import clsx from "clsx";
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, usePathname } from "@/lib/navigation";
 
 interface MobileNavProps {
@@ -17,6 +17,9 @@ const MobileNav = ({ links, showSidebar, setShowSidebar }: MobileNavProps) => {
     const pathname = usePathname();
 
     const handleClose = () => setShowSidebar(false);
+
+    useEffect(handleClose, [pathname]);
+
     return (
         <>
             {/* Overlay */}
