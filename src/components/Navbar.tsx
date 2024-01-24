@@ -34,7 +34,7 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="flex-none">
-                <ul className="menu menu-horizontal px-1 ">
+                <ul className="menu menu-horizontal px-1 font-transcend">
                     {links.map((link) => (
                         <li key={link.label}>
                             <Link
