@@ -1,7 +1,9 @@
 {
     "Navbar": {
         "home": "Home",
-        "about-us": "About"
+        "about-us": "About",
+        "contact-us": "Contact Us",
+        "login": "Login"
     },
     "Home": {
         "heading": "Luxury Real Estate",

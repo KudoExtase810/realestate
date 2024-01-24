@@ -1,11 +1,13 @@
 {
     "Navbar": {
         "home": "Startseite",
-        "about-us": "Über uns"
+        "about-us": "Über uns",
+        "contact-us": "Kontaktiere uns",
+        "login": "Anmelden"
     },
     "Home": {
-        "heading": "Finden und erkunden Sie Ihre Traumimmobilie zu erschwinglichen Preisen",
-        "description": "Bereit zum Einzug - Wohnungen in erstklassiger Lage mit vollständiger Ausstattung und erschwinglichen Preisen.",
+        "heading": "Luxuriöse Immobilien",
+        "description": "Finden und erkunden Sie Ihre Traumimmobilie zu erschwinglichen Preisen",
         "button": "Loslegen"
     }
 }
