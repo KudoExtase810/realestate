@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Spectral } from "next/font/google";
+import localFont from "next/font/local";
 import "@/styles/globals.css";
 import { Locale, locales } from "@/i18n";
 import { unstable_setRequestLocale } from "next-intl/server";
@@ -7,9 +8,54 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 
-const poppins = Poppins({
-    subsets: ["latin"],
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+// const poppins = Spectral({
+//     subsets: ["latin"],
+//     weight: ["200", "300", "400", "500", "600", "700", "800"],
+// });
+
+const collingar = localFont({
+    src: "../../../public/fonts/Collingar-Italic/Collingar-Italic.otf",
+    variable: "--font-collingar",
+});
+const transcend = localFont({
+    src: [
+        {
+            path: "../../../public/fonts/Transcend/Transcend-Black.otf",
+            weight: "900", // Black
+            style: "normal",
+        },
+        {
+            path: "../../../public/fonts/Transcend/Transcend-Bold.otf",
+            weight: "700", // Bold
+            style: "normal",
+        },
+        {
+            path: "../../../public/fonts/Transcend/Transcend-Light.otf",
+            weight: "300", // Light
+            style: "normal",
+        },
+        {
+            path: "../../../public/fonts/Transcend/Transcend-Medium.otf",
+            weight: "500", // Medium
+            style: "normal",
+        },
+        {
+            path: "../../../public/fonts/Transcend/Transcend-Regular.otf",
+            weight: "400", // Regular
+            style: "normal",
+        },
+        {
+            path: "../../../public/fonts/Transcend/Transcend-Semibold.otf",
+            weight: "600", // Semibold
+            style: "normal",
+        },
+        {
+            path: "../../../public/fonts/Transcend/Transcend-Thin.otf",
+            weight: "100", // Thin
+            style: "normal",
+        },
+    ],
+    variable: "--font-transcend",
 });
 
 export const metadata: Metadata = {
@@ -34,7 +80,7 @@ export default function RootLayout({
 
     return (
         <html lang={locale}>
-            <body className={poppins.className}>
+            <body className={`${collingar.variable} ${transcend.variable}`}>
                 <NextIntlClientProvider
                     locale={locale}
                     messages={translations}

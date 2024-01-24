@@ -5,3 +5,14 @@
 .section-padding {
     @apply py-4 lg:py-12;
 }
+
+body {
+    @apply font-collingar;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    @apply font-transcend;
+}

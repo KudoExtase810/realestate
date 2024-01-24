@@ -7,7 +7,12 @@ const config: Config = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                collingar: ["var(--font-collingar)"],
+                transcend: ["var(--font-transcend)"],
+            },
+        },
     },
     daisyui: {
         themes: ["luxury"],
