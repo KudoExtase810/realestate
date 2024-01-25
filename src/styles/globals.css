@@ -61,7 +61,7 @@ h4 {
 }
 
 /* Nav gold effect */
-header {
+.navbar {
     border: none;
     background: linear-gradient(
         to right,
@@ -83,11 +83,11 @@ header {
     animation: headerBorderAnimation 10s linear infinite;
 }
 
-header * {
+.navbar * {
     z-index: 2;
 }
 
-header::before {
+.navbar::before {
     position: absolute;
     content: "";
     color: #ffd277;
