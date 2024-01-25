@@ -32,8 +32,8 @@ h4 {
         #ffd277,
         #77530a
     );
-    background-size: 400%;
-    background-position: left;
+    background-size: 200%;
+    background-position: 100%;
     color: #ffd277;
     position: relative;
     display: flex;
@@ -42,7 +42,7 @@ h4 {
     cursor: pointer;
     overflow: hidden;
     position: relative;
-    animation: borderAnimation 5s linear infinite;
+    animation: btnBorderAnimation 10s linear infinite;
 }
 
 .gold-effect::before {
@@ -60,15 +60,6 @@ h4 {
     background-size: 200%;
 }
 
-.gold-effect:hover::before {
-    background-position: right;
-    transition-duration: 1s;
-}
-
-.gold-effect:active {
-    transform: scale(0.95);
-}
-
 /* Nav gold effect */
 header {
     border: none;
@@ -81,14 +72,15 @@ header {
         #ffd277,
         #77530a
     );
-    background-size: 400%;
-    background-position: left;
+    background-size: 200%;
+    background-position: 100%;
     color: #ffd277;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    animation: borderAnimation 5s linear infinite;
+    overflow: hidden;
+    animation: headerBorderAnimation 10s linear infinite;
 }
 
 header * {
@@ -109,16 +101,22 @@ header::before {
     @apply bg-base-100;
 }
 
-header:hover::before {
-    background-position: right;
-    transition-duration: 1s;
+@keyframes btnBorderAnimation {
+    0%,
+    100% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 200%;
+    }
 }
 
-@keyframes borderAnimation {
-    0% {
-        background-position: left;
-    }
+@keyframes headerBorderAnimation {
+    0%,
     100% {
-        background-position: right;
+        background-position: 0%;
+    }
+    50% {
+        background-position: 200%;
     }
 }
