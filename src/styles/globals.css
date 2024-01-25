@@ -88,7 +88,6 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
     animation: borderAnimation 5s linear infinite;
 }
 
@@ -105,9 +104,9 @@ header::before {
     justify-content: center;
     width: 99.6%;
     height: 94%;
-    transition-duration: 1s;
-    background-color: rgba(0, 0, 0, 0.75);
+    /* transition-duration: 1s; */
     background-size: 200%;
+    @apply bg-base-100;
 }
 
 header:hover::before {

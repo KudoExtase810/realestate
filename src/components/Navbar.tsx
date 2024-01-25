@@ -29,7 +29,7 @@ const Navbar = () => {
             <header
                 className={clsx(
                     "navbar bg-base-100 px-4 md:px-8",
-                    isHome && "absolute top-0 bg-opacity-50"
+                    isHome && "absolute top-0 bg-opacity-50X"
                 )}
             >
                 <div className="flex-1">
@@ -102,7 +102,7 @@ const LocaleSwitcher = () => {
             </div>
             <ul
                 tabIndex={0}
-                className="dropdown-content rounded-md -right-3 z-[1] menu p-2 shadow bg-base-200 mx-auto"
+                className="dropdown-content rounded-md -right-3 z-[999] menu p-2 shadow bg-base-200 mx-auto"
             >
                 {locales.map((locale) => (
                     <li key={locale}>

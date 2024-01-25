@@ -21,7 +21,7 @@ const Hero = () => {
                         {t("description")}
                     </p>
                     <Link
-                        href="#"
+                        href="/about"
                         className="font-transcend group gold-effect mx-auto"
                     >
                         <span className="z-10">{t("button")}</span>
