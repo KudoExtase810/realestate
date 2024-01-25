@@ -22,10 +22,10 @@ const Hero = () => {
                     </p>
                     <Link
                         href="#"
-                        className="btn font-transcend btn-secondary flex gap-1.5 items-center group max-w-sm mx-auto"
+                        className="font-transcend group gold-effect mx-auto"
                     >
-                        <span>{t("button")}</span>
-                        <FaChevronRight className="transition-transform duration-300 group-hover:translate-x-3" />
+                        <span className="z-10">{t("button")}</span>
+                        <FaChevronRight className="z-10 transition-transform duration-300 group-hover:translate-x-3" />
                     </Link>
                 </div>
             </div>

@@ -25,7 +25,7 @@ const MobileNav = ({ links, showSidebar, setShowSidebar }: MobileNavProps) => {
             {/* Overlay */}
             {showSidebar && (
                 <div
-                    className="fixed inset-0 bg-black opacity-50 z-10 md:hidden"
+                    className="fixed inset-0 bg-black opacity-50 z-10"
                     onClick={handleClose}
                 ></div>
             )}
