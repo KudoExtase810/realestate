@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Spectral } from "next/font/google";
+import { Poppins, Raleway, Spectral } from "next/font/google";
 import localFont from "next/font/local";
 import "@/styles/globals.css";
 import { Locale, locales } from "@/i18n";
@@ -8,10 +8,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 
-// const poppins = Spectral({
-//     subsets: ["latin"],
-//     weight: ["200", "300", "400", "500", "600", "700", "800"],
-// });
+const raleway = Raleway({
+    subsets: ["latin"],
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 const collingar = localFont({
     src: "../../../public/fonts/Collingar-Italic/Collingar-Italic.otf",
@@ -80,7 +80,7 @@ export default function RootLayout({
 
     return (
         <html lang={locale}>
-            <body className={`${collingar.variable} ${transcend.variable}`}>
+            <body className={raleway.className}>
                 <NextIntlClientProvider
                     locale={locale}
                     messages={translations}
