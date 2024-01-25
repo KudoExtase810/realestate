@@ -102,7 +102,7 @@ const LocaleSwitcher = () => {
             </div>
             <ul
                 tabIndex={0}
-                className="dropdown-content rounded-md -right-3 z-[999] menu p-2 shadow bg-base-200 mx-auto"
+                className="dropdown-content rounded-md -right-3 menu p-2 shadow bg-base-200 mx-auto"
             >
                 {locales.map((locale) => (
                     <li key={locale}>

@@ -79,7 +79,6 @@ h4 {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
     animation: headerBorderAnimation 10s linear infinite;
 }
 
