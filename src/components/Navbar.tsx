@@ -28,8 +28,8 @@ const Navbar = () => {
         <>
             <header
                 className={clsx(
-                    "navbar bg-base-100 px-4 md:px-8",
-                    isHome && "absolute top-0 bg-opacity-50X"
+                    "navbar bg-opacity-60 z-10 bg-base-100 px-4 md:px-8 backdrop-blur border-b border-base-content",
+                    isHome && "absolute top-0"
                 )}
             >
                 <div className="flex-1">
@@ -37,7 +37,7 @@ const Navbar = () => {
                         <Image
                             width={175}
                             height={30}
-                            src="https://img.logoipsum.com/255.svg"
+                            src="/images/logo.png"
                             alt="logo"
                         />
                     </Link>

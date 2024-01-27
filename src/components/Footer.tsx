@@ -18,7 +18,7 @@ const Footer = () => {
                         width={175}
                         height={30}
                         className="mb-2.5"
-                        src="https://img.logoipsum.com/255.svg"
+                        src="/images/logo.png"
                         alt="logo"
                     />
                 </Link>
