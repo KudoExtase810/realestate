@@ -10,7 +10,7 @@ const About = ({ params: { locale } }: { params: { locale: Locale } }) => {
     unstable_setRequestLocale(locale);
     return (
         <div className="container mx-auto w-fit">
-            <HeaderSection />
+            {/* <HeaderSection /> */}
             <section className="section-padding flex max-lg:flex-col-reverse gap-8 px-4">
                 <Team />
                 <Details />

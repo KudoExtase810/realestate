@@ -6,7 +6,7 @@ const Hero = () => {
     const t = useTranslations("Home");
     return (
         <section className="hero min-h-screen relative">
-            <div className="hero-overlay bg-opacity-60 z-[2]"></div>
+            <div className="hero-overlay bg-black bg-opacity-60 z-[2]"></div>
             <div className="hero-content text-center z-[3]">
                 <div className="container text-center mx-auto lg:max-w-5xl">
                     <h1 className="uppercase mb-4 text-7xl font-black max-sm:font-boldREMOVED leading-tight max-lg:text-6xl max-sm:text-3xl">
