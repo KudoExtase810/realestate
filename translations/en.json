@@ -5,9 +5,25 @@
         "contact-us": "Contact Us",
         "login": "Login"
     },
+
     "Home": {
         "heading": "Luxury Real Estate",
         "description": "Find and explore your dream property at affordable prices",
         "button": "Get started"
+    },
+
+    "About": {
+        "who-are-we": {
+            "title": "Who are we?",
+            "description": "DI Real Estate Agency is a distinguished boutique specializing in the acquisition, sale, and leasing of premium real estate projects in Dubai. Founded by industry experts Dawood and Brahim, our boutique brings together over 30 years of combined expertise to assist clients in finding tailored solutions for their real estate needs. Mr. Dawood, with a well-established company in the Netherlands, and Brahim, a prominent figure in the real estate market collaborating with over 50 developers, jointly lead our mission to help investors and end-users worldwide discover their ideal homes in Dubai. At DI Real Estate Agency, we pride ourselves on our unparalleled industry knowledge, personalized service, and global reach. Whether you are buying, selling, or leasing, we are committed to delivering exceptional results and exceeding expectations. Trust us to navigate the dynamic Dubai real estate landscape and guide you towards the perfect property investment or residence."
+        },
+        "what-we-do": {
+            "title": "What we do?",
+            "description": "At DI Real Estate Agency, our core mission is to identify and secure projects that align seamlessly with the unique requirements of our valued clients, be they investors or end-users. With exclusive collaborations established with various developers, we have the advantage of accessing the finest units with the highest return on investment for our clients. Our commitment extends beyond mere transactions – we offer comprehensive services in selling, buying, and leasing properties in Dubai, ensuring a hassle-free experience for our clients worldwide. From initiation to completion, we meticulously handle every aspect of the selling, buying, and leasing process, guaranteeing a smooth and efficient transaction. At DI Real Estate Agency, we take pride in our ability to provide detailed and personalized services, leveraging our deep industry knowledge and global network. Whether you are looking to sell, buy, or lease, trust us to navigate the complexities of the Dubai real estate market and deliver exceptional results tailored to your specific needs."
+        },
+        "what-can-you-expect": {
+            "title": "What can you expect?",
+            "description": "At DI Real Estate Agency, our commitment to our clients goes beyond traditional expectations. With our dedicated team providing 24/7 services, fluent in 10 languages, we ensure seamless communication and support seven days a week. Our goal is to facilitate a smooth selling, buying, and leasing process for our clients, regardless of their location. Expect nothing but the highest level of service from our team. We work tirelessly to secure the best units at the most competitive prices, catering to every budget. Our expertise allows us to guide you effortlessly through the buying, selling, and leasing process, even if you're not physically present in the country. In addition to real estate transactions, we go the extra mile to assist you in setting up your business, obtaining a golden visa, and starting a life in Dubai. At DI Real Estate Agency, we are dedicated to providing comprehensive and unparalleled support to ensure a successful and rewarding experience for our clients in every aspect of their Dubai journey."
+        }
     }
 }

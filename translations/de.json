@@ -5,9 +5,25 @@
         "contact-us": "Kontaktiere uns",
         "login": "Anmelden"
     },
+
     "Home": {
         "heading": "Luxuriöse Immobilien",
         "description": "Finden und erkunden Sie Ihre Traumimmobilie zu erschwinglichen Preisen",
         "button": "Loslegen"
+    },
+
+    "About": {
+        "who-are-we": {
+            "title": "Wer sind wir?",
+            "description": "DI Real Estate Agency is een gerenommeerd boutique-bedrijf gespecialiseerd in de aankoop, verkoop en verhuur van hoogwaardige vastgoedprojecten in Dubai. Opgericht door branche-experts Dawood en Brahim, bundelt onze boetiek meer dan 30 jaar gecombineerde ervaring om klanten te helpen bij het vinden van op maat gemaakte oplossingen voor hun vastgoedbehoeften. Met de leiding van Mr. Dawood, eigenaar van een goed gevestigd bedrijf in Nederland, en Brahim, een prominente figuur in de vastgoedmarkt met samenwerkingen met meer dan 50 ontwikkelaars, leiden wij gezamenlijk onze missie om investeerders en eindgebruikers wereldwijd te helpen bij het ontdekken van hun ideale woningen in Dubai. Bij DI Real Estate Agency zijn we trots op onze ongeëvenaarde branchekennis, persoonlijke service en wereldwijde bereik. Of u nu koopt, verkoopt of huurt, wij zijn toegewijd om uitzonderlijke resultaten te leveren en verwachtingen te overtreffen. Vertrouw op ons om het dynamische vastgoedlandschap van Dubai te navigeren en u te begeleiden naar de perfecte vastgoedinvestering of residentie."
+        },
+        "what-we-do": {
+            "title": "Was machen wir?",
+            "description": "Bij DI Real Estate Agency is onze kernmissie om projecten te identificeren en te beveiligen die naadloos aansluiten bij de unieke eisen van onze gewaardeerde klanten, of ze nu investeerders of eindgebruikers zijn. Met exclusieve samenwerkingen met verschillende ontwikkelaars hebben we het voordeel toegang te hebben tot de beste eenheden met het hoogste rendement op investering voor onze klanten. Onze toewijding strekt zich uit voorbij louter transacties - we bieden uitgebreide diensten aan bij het verkopen, kopen en verhuren van onroerend goed in Dubai, zorgen voor een probleemloze ervaring voor onze klanten wereldwijd. Van begin tot eind behandelen we zorgvuldig elk aspect van het verkoop-, koop- en verhuurproces, met een garantie voor een soepele en efficiënte transactie. Bij DI Real Estate Agency zijn we trots op onze mogelijkheid om gedetailleerde en persoonlijke diensten te bieden, gebruikmakend van onze diepgaande branchekennis en wereldwijd netwerk. Of u nu wilt verkopen, kopen of huren, vertrouw op ons om de complexiteiten van de vastgoedmarkt in Dubai te navigeren en uitzonderlijke resultaten te leveren die zijn afgestemd op uw specifieke behoeften."
+        },
+        "what-can-you-expect": {
+            "title": "Was können Sie erwarten?",
+            "description": "Bij DI Real Estate Agency gaat onze toewijding aan onze klanten verder dan traditionele verwachtingen. Met ons toegewijde team dat 24/7 diensten levert en vloeiend is in 10 talen, zorgen we voor naadloze communicatie en ondersteuning zeven dagen per week. Ons doel is om een soepel verkoop-, koop- en verhuurproces te vergemakkelijken voor onze klanten, ongeacht hun locatie. Verwacht niets minder dan het hoogste serviceniveau van ons team. We werken onvermoeibaar om de beste eenheden tegen de meest concurrerende prijzen veilig te stellen, passend bij elk budget. Onze expertise stelt ons in staat om u moeiteloos door het koop-, verkoop- en verhuurproces te begeleiden, zelfs als u niet fysiek aanwezig bent in het land. Naast vastgoedtransacties gaan we een stap verder om u te helpen bij het opzetten van uw bedrijf, het verkrijgen van een gouden visum en het beginnen van een leven in Dubai. Bij DI Real Estate Agency zijn we toegewijd aan het bieden van uitgebreide en ongeëvenaarde ondersteuning om een succesvolle en lonende ervaring te garanderen voor onze klanten in elk aspect van hun Dubai-reis."
+        }
     }
 }

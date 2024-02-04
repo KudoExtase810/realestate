@@ -1,30 +1,33 @@
-const detailsData = [
-    {
-        title: "Who are we?",
-        content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aspernatur minima in doloribus neque ut sapiente vel beatae deleniti ratione consequatur recusandae voluptas dolores nulla, tempora perferendis. Assumenda incidunt iste exercitationem reiciendis.",
-    },
-    {
-        title: "What we do?",
-        content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aspernatur minima in doloribus neque ut sapiente vel beatae deleniti ratione consequatur recusandae voluptas dolores nulla, tempora perferendis. Assumenda incidunt iste exercitationem reiciendis.",
-    },
-    {
-        title: "What can you expect?",
-        content:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae aspernatur minima in doloribus neque ut sapiente vel beatae deleniti ratione consequatur recusandae voluptas dolores nulla, tempora perferendis. Assumenda incidunt iste exercitationem reiciendis.",
-    },
-];
+import { useTranslations } from "next-intl";
 
 const Details = () => {
+    const t = useTranslations("About");
+
+    const sections = [
+        {
+            title: t("who-are-we.title"),
+            description: t("who-are-we.description"),
+        },
+        {
+            title: t("what-we-do.title"),
+            description: t("what-we-do.description"),
+        },
+        {
+            title: t("what-can-you-expect.title"),
+            description: t("what-can-you-expect.description"),
+        },
+    ];
+
     return (
         <div className="flex flex-col gap-12 lg:max-w-md">
-            {detailsData.map((detail, index) => (
-                <div key={index}>
-                    <h3 className="text-xl lg:text-2xl font-semibold lg:font-boldREMOVED mb-2.5">
-                        {detail.title}
+            {sections.map((section, idx) => (
+                <div key={idx}>
+                    <h3 className="text-xl lg:text-2xl font-semibold lg:font-bold mb-2.5">
+                        {section.title}
                     </h3>
-                    <p className="text-secondary-content">{detail.content}</p>
+                    <p className="text-secondary-content">
+                        {section.description}
+                    </p>
                 </div>
             ))}
         </div>

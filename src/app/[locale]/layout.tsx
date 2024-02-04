@@ -33,8 +33,13 @@ export default function RootLayout({
     unstable_setRequestLocale(locale);
     const translations = useMessages();
 
+    const isRTL = () => {
+        const RTLlocales = ["ar"];
+        return RTLlocales.includes(locale);
+    };
+
     return (
-        <html lang={locale}>
+        <html lang={locale} dir={isRTL() ? "rtl" : "ltr"}>
             <body className={raleway.className}>
                 <NextIntlClientProvider
                     locale={locale}

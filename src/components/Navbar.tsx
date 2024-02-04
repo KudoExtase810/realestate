@@ -86,6 +86,7 @@ const LocaleSwitcher = () => {
     const currentLocale = useLocale() as Locale;
     const localeFlags: Record<Locale, string> = {
         en: "/images/flags/uk.svg",
+        ar: "/images/flags/ps.svg",
         de: "/images/flags/de.svg",
     };
     return (
