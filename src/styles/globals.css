@@ -6,20 +6,8 @@
     @apply py-4 lg:py-12;
 }
 
-body {
-    @apply font-collingar;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    @apply font-transcend;
-}
-
 /* Hero btn gold effect */
 .gold-effect {
-    @apply w-[375px] max-[380px]:w-[360px] max-[360px]:w-[325px] max-[325px]:w-[300px] max-[300px]:w-[275px] max-[275px]:w-[250px];
     height: 75px;
     border: none;
     border-radius: 10px;
