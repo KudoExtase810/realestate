@@ -1,19 +1,9 @@
-"use client";
-
 import { Link } from "@/lib/navigation";
 import { useTranslations } from "next-intl";
-import { useEffect, useRef } from "react";
 import { FaChevronRight } from "react-icons/fa";
 
 const Hero = () => {
     const t = useTranslations("Home");
-    const videoRef = useRef<HTMLVideoElement>(null);
-
-    useEffect(() => {
-        if (videoRef.current) {
-            videoRef.current.playbackRate = 0.75;
-        }
-    }, []);
 
     return (
         <section className="hero min-h-screen relative">
@@ -36,7 +26,6 @@ const Hero = () => {
                 </div>
             </div>
             <video
-                ref={videoRef}
                 src="/videos/hero.mp4"
                 autoPlay
                 muted
